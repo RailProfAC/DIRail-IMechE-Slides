@@ -226,17 +226,17 @@
                             legend style = {at={(0.05,0.5)},
                                     anchor=west}]
                             
-                              \addplot[thick, draw = magenta!70!black] table[x=t,y=Fq, row sep=crcr] {WeibullEstCensored.dat}; 
+                              \addplot[thick, draw = magenta!70!black] table[x=t,y=Fq] {WeibullEstCensored.dat}; 
                             
-                             \addplot[thick, draw = orange!80!black] table[x=t,y=h, row sep=crcr] {WeibullEstCensored.dat}; 
+                             \addplot[thick, draw = orange!80!black] table[x=t,y=h] {WeibullEstCensored.dat}; 
                             
-                             \addplot[thick, draw = red!70!black] table[x=t,y=Fqest, row sep=crcr] {WeibullEstCensored2.dat}; 
+                             \addplot[thick, draw = red!70!black] table[x=t,y=Fqest] {WeibullEstCensored2.dat}; 
                                 
                               
-                              \addplot[thick, draw = green!70!black] table[x=t,y=Fqsim, row sep=crcr] {WeibullEstCensored.dat}; 
+                              \addplot[thick, draw = green!70!black] table[x=t,y=Fqsim] {WeibullEstCensored.dat}; 
                               
                               
-                             \addplot[thick, draw = blue!70!black] table[x=t,y=hest, row sep=crcr] {WeibullEstCensored.dat}
+                             \addplot[thick, draw = blue!70!black] table[x=t,y=hest] {WeibullEstCensored.dat}
                              coordinate [pos=0.5] (A)
                                coordinate [pos=0.6]  (B)
                              ; 
@@ -273,6 +273,33 @@
 }
 }
 
+\frame{\frametitle{Ein Studiengang - drei Studienmodelle}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Vollzeit
+		\begin{itemize}
+		\item 7 Semester
+		\end{itemize}
+		\item Ausbildungsintegriert dual
+		\begin{itemize}
+		\item 9 oder 11 Semester
+		\item Abh\"angig von der Wahl des Vertiefungsstudiums
+		\end{itemize}
+		\item Teilzeit
+		\begin{itemize}
+		\item 11 Semester
+		\end{itemize}
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{6cm} 
+         	\begin{center}
+            		\includegraphics[width=0.9\textwidth]{Studienverlauf}\source{}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
 
 \frame{\frametitle{Struktur des Studiengangs - Basisstudium}
 \framesubtitle{}
@@ -799,7 +826,7 @@ node distance = 1.05cm]
 		\begin{itemize}
 		\item H$_{2}$-Brennstoffzelle
 		\item IoT-Connection
-		\item Autonomes Fahren (geplant f\"ur 2018)
+		\item Autonomes Fahren (geplant f\"ur 2019)
 		\end{itemize}
 		\item FH Aachen ist erster ``Overseas Entry''
      	\end{itemize}
@@ -858,8 +885,8 @@ node distance = 1.05cm]
 		\begin{itemize}
 		\item Namenssponsor (5000 \euro) (verkauft)
 		\item Logo auf Lok (500/1000 \euro)
-		\item Warnwesten-Sponsor (800 \euro)
-		\item Dinner-Sponsor (250 \euro)
+		\item Warnwesten-Sponsor (2000 \euro)
+		\item Dinner-Sponsor (800 \euro) (verkauft)
 		\end{itemize}
 		\item F\"ur alle Pakete: Sponsoren-Event mit Studierenden
      	\end{itemize}
@@ -901,7 +928,7 @@ node distance = 1.05cm]
             		\only<1>{\includegraphics[width=1\textwidth]{IMG_0845}}
 			\only<2>{\includegraphics[width=1\textwidth]{DSC_1375}}
 			\only<3>{\includegraphics[width=1\textwidth]{DSC_1777}}
-			\only<4>{\includegraphics[width=1\textwidth]{DSC_1439}}
+			\only<4>{\includegraphics[width=1\textwidth]{EmmaCastle}}
 			\only<5>{\vspace{-.5cm}\includegraphics[width=.9\textwidth]{Whishlist}}
         		\end{center}
      \end{column}
