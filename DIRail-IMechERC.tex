@@ -144,27 +144,27 @@
 }
 
 
-
-\frame{\frametitle{CV Raphael Pfaff}
-\framesubtitle{}
-\begin{center}
-\includegraphics[height = 0.8\textheight]{CVGraphic}
-\end{center}
-}
-
-\frame{\frametitle{Wer wir sind}
-\framesubtitle{}
-\begin{center}
-\begin{tikzpicture}
-\node at (5,1) {\includegraphics[width = 5cm]{Roger}};
-\node at (0,1) {\includegraphics[width = 6cm]{Team}};
-\node at (-1,-2) {\includegraphics[width = 6cm]{TrainEmma}};
-
-\node at (4,-2) {\includegraphics[width = 5cm]{InnotransStudis}};
-
-\end{tikzpicture}
-\end{center}
-}
+%
+%\frame{\frametitle{CV Raphael Pfaff}
+%\framesubtitle{}
+%\begin{center}
+%\includegraphics[height = 0.8\textheight]{CVGraphic}
+%\end{center}
+%}
+%
+%\frame{\frametitle{Wer wir sind}
+%\framesubtitle{}
+%\begin{center}
+%\begin{tikzpicture}
+%\node at (5,1) {\includegraphics[width = 5cm]{Roger}};
+%\node at (0,1) {\includegraphics[width = 6cm]{Team}};
+%\node at (-1,-2) {\includegraphics[width = 6cm]{TrainEmma}};
+%
+%\node at (4,-2) {\includegraphics[width = 5cm]{InnotransStudis}};
+%
+%\end{tikzpicture}
+%\end{center}
+%}
 
 \frame{\frametitle{Was wir tun}
 \framesubtitle{Lehre, Forschung, Entwickung und Beratung entlang des Lebenszyklus im Bahnverkehr}
@@ -190,71 +190,71 @@
 		\item Elektrische Antriebe
 		\item Fluidtechnik
 		\end{itemize}
-		\item Statistische Methoden
-		\item Methoden des QM
+%		\item Statistische Methoden
+%		\item Methoden des QM
 		\end{itemize}}
-		\only<2->{\item Current R\&D foci:
-		\begin{itemize}
-		\item IoT-connected wagon ``Wagon 4.0''
-		\item Refurbishment of legacy electrical locomotives
-		\item Reliability Estimation using Big Data approaches
-		\item Usage of Additive Manufacturing 
-		\item Wheel-Rail-Contact Modelling% under sanding
-		\item Ad hoc-Estimation of braking curves
-		\item Applications of machine learning for railways  
-		\end{itemize}}
+%		\only<2->{\item Current R\&D foci:
+%		\begin{itemize}
+%		\item IoT-connected wagon ``Wagon 4.0''
+%		\item Refurbishment of legacy electrical locomotives
+%		\item Reliability Estimation using Big Data approaches
+%		\item Usage of Additive Manufacturing 
+%		\item Wheel-Rail-Contact Modelling% under sanding
+%		\item Ad hoc-Estimation of braking curves
+%		\item Applications of machine learning for railways  
+%		\end{itemize}}
      	\end{itemize}
      \end{column}
      	\begin{column}[T]{7cm} 
          	\begin{center}
             		\only<1>{\includegraphics[width=0.8\textwidth]{Lehre}\source{}}
 			%%
-			\only<2>{\includegraphics[width=0.95\textwidth]{TrainConceptWagon40}\source{}}
-			\only<3>{\includegraphics[width=0.7\textwidth]{Rekuperation}\source{}}
-			%%
-			\only<4>{
-			\vspace{-.6cm}
-			\begin{tikzpicture}
-                            \begin{axis}[no marks,
-                            xmax=15, xmin = 0,
-                             ymin = 0, ymax = 1, grid=both,
-                            %axis lines=middle, 
-                            %ylabel = {$p$},
-                            xlabel = {$t/\mathrm{a}$},
-                            legend entries={$\bar{F}$, $h$, $\bar{F}_{\text{main}}$, $\hat{F}$, 
-                            $\hat{h}$}, 
-                            legend style = {at={(0.05,0.5)},
-                                    anchor=west}]
-                            
-                              \addplot[thick, draw = magenta!70!black] table[x=t,y=Fq] {WeibullEstCensored.dat}; 
-                            
-                             \addplot[thick, draw = orange!80!black] table[x=t,y=h] {WeibullEstCensored.dat}; 
-                            
-                             \addplot[thick, draw = red!70!black] table[x=t,y=Fqest] {WeibullEstCensored2.dat}; 
-                                
-                              
-                              \addplot[thick, draw = green!70!black] table[x=t,y=Fqsim] {WeibullEstCensored.dat}; 
-                              
-                              
-                             \addplot[thick, draw = blue!70!black] table[x=t,y=hest] {WeibullEstCensored.dat}
-                             coordinate [pos=0.5] (A)
-                               coordinate [pos=0.6]  (B)
-                             ; 
-                             \fill[fill = blue!70!black, opacity = .7] (A) -| (B)
-                             node [pos=0.75,anchor=west]
-                                 {$\triangle h$};
-                             \end{axis}
-                            \end{tikzpicture}
-                            }
-                            \only<5>{\includegraphics[width=0.2\textwidth]{TestFeder4b} \hspace{3mm}
-                            		\includegraphics[width=0.2\textwidth]{TestFeder4a} \vspace{3mm}\\
-					\includegraphics[width=0.2\textwidth]{TestFeder1b}\hspace{3mm}
-					\includegraphics[width=0.4\textwidth]{TestFeder1a}}
-                            \only<6>{\includegraphics[width=0.9\textwidth]{AreaComp}\source{}}
-                            \only<7>{\vspace{-.6cm}
-                            \includegraphics[width=0.7\textwidth]{ETCSmhist}\\
-                            		\hspace{1.5cm} \includegraphics[width=0.7\textwidth]{ETCShist}}
-		\only<8>{\includegraphics[width=0.9\textwidth]{170505GPCascadeClassifier}}
+%			\only<2>{\includegraphics[width=0.95\textwidth]{TrainConceptWagon40}\source{}}
+%			\only<3>{\includegraphics[width=0.7\textwidth]{Rekuperation}\source{}}
+%			%%
+%			\only<4>{
+%			\vspace{-.6cm}
+%			\begin{tikzpicture}
+%                            \begin{axis}[no marks,
+%                            xmax=15, xmin = 0,
+%                             ymin = 0, ymax = 1, grid=both,
+%                            %axis lines=middle, 
+%                            %ylabel = {$p$},
+%                            xlabel = {$t/\mathrm{a}$},
+%                            legend entries={$\bar{F}$, $h$, $\bar{F}_{\text{main}}$, $\hat{F}$, 
+%                            $\hat{h}$}, 
+%                            legend style = {at={(0.05,0.5)},
+%                                    anchor=west}]
+%                            
+%                              \addplot[thick, draw = magenta!70!black] table[x=t,y=Fq] {WeibullEstCensored.dat}; 
+%                            
+%                             \addplot[thick, draw = orange!80!black] table[x=t,y=h] {WeibullEstCensored.dat}; 
+%                            
+%                             \addplot[thick, draw = red!70!black] table[x=t,y=Fqest] {WeibullEstCensored2.dat}; 
+%                                
+%                              
+%                              \addplot[thick, draw = green!70!black] table[x=t,y=Fqsim] {WeibullEstCensored.dat}; 
+%                              
+%                              
+%                             \addplot[thick, draw = blue!70!black] table[x=t,y=hest] {WeibullEstCensored.dat}
+%                             coordinate [pos=0.5] (A)
+%                               coordinate [pos=0.6]  (B)
+%                             ; 
+%                             \fill[fill = blue!70!black, opacity = .7] (A) -| (B)
+%                             node [pos=0.75,anchor=west]
+%                                 {$\triangle h$};
+%                             \end{axis}
+%                            \end{tikzpicture}
+%                            }
+%                            \only<5>{\includegraphics[width=0.2\textwidth]{TestFeder4b} \hspace{3mm}
+%                            		\includegraphics[width=0.2\textwidth]{TestFeder4a} \vspace{3mm}\\
+%					\includegraphics[width=0.2\textwidth]{TestFeder1b}\hspace{3mm}
+%					\includegraphics[width=0.4\textwidth]{TestFeder1a}}
+%                            \only<6>{\includegraphics[width=0.9\textwidth]{AreaComp}\source{}}
+%                            \only<7>{\vspace{-.6cm}
+%                            \includegraphics[width=0.7\textwidth]{ETCSmhist}\\
+%                            		\hspace{1.5cm} \includegraphics[width=0.7\textwidth]{ETCShist}}
+%		\only<8>{\includegraphics[width=0.9\textwidth]{170505GPCascadeClassifier}}
         		\end{center}
      \end{column}
  \end{columns}
@@ -554,7 +554,7 @@ node distance = 1.05cm]
      \end{column}
  \end{columns}
  \begin{center}
- \href{https://www.youtube.com/watch?v=bTGwHGsTZJU}{\includegraphics[width= 5cm]{DualesStudium.jpg}\\Klicken f\"ur Image-Video}
+ \href{https://www.youtube.com/watch?v=bTGwHGsTZJU}{\includegraphics[width= 5cm]{DualesStudium.jpg}\source{Klicken f\"ur Image-Video}}
  \end{center}
 }
 
@@ -566,6 +566,11 @@ node distance = 1.05cm]
 \item[$\square$] Abstimmung mit lokaler IHK - begleitet durch FH-Beauftragten A. Beumers
 \item[$\square$] Ggf. Unterst\"utzung bei Marketing und Auswahl
 \end{itemize}
+\vspace{1cm}
+Kontakt:\\
+Prof. Dr. Raphael Pfaff\\
+pfaff@fh-aachen.de\\
++49-151-70052454
 }
 
 
@@ -837,9 +842,9 @@ node distance = 1.05cm]
 		\end{itemize}
 		\item Raum f\"ur Innovation:
 		\begin{itemize}
-		\item H$_{2}$-Brennstoffzelle
+		\item Batteriefahrzeug
 		\item IoT-Connection
-		\item Autonomes Fahren (geplant f\"ur 2019)
+		\item Autonomes Fahren
 		\end{itemize}
 		\item FH Aachen ist erster ``Overseas Entry''
      	\end{itemize}
@@ -872,9 +877,9 @@ node distance = 1.05cm]
      	\begin{column}[T]{7cm} 
          	\begin{center}
 		\vspace{-.5cm}
-            		\href{https://www.youtube.com/watch?v=_z9fII6lbig}{\includegraphics[width=0.9\textwidth]{Winners2018}}\\
-			Team FH$_{2}$Rail\\
-			IMechE Railway Challenge 2018\\ \vspace{.5cm}
+            		\href{https://www.youtube.com/watch?v=_z9fII6lbig}{\includegraphics[width=0.9\textwidth]{Winners2018}} \source{Klicken f\"ur Video}\\
+			Emma $\heartsuit$ J.I.M. \\
+			IMechE Railway Challenge 2018\\ \vspace{.3cm}
 			4. Platz von 12 Teilnehmern
         		\end{center}
      \end{column}
@@ -884,7 +889,7 @@ node distance = 1.05cm]
 \frame{\frametitle{Sponsoring f\"ur Emma und das Team?}
 \framesubtitle{}
 \begin{columns}[t] 
-     \begin{column}[T]{7cm} 
+     \begin{column}[T]{8cm} 
      	\begin{itemize}
      		\item Nationale und internationale Sichtbarkeit (Youtube, Facebook, Innotrans, ...)
 %		\begin{itemize}
@@ -898,56 +903,56 @@ node distance = 1.05cm]
 		\begin{itemize}
 		\item Namenssponsor (5000 \euro) (verkauft)
 		\item Logo auf Lok (500/1000 \euro)
-		\item Warnwesten-Sponsor (2000 \euro)
+		\item Warnwesten-Sponsor (2000 \euro) (verkauft)
 		\item Dinner-Sponsor (800 \euro) (verkauft)
 		\end{itemize}
 		\item F\"ur alle Pakete: Sponsoren-Event mit Studierenden
      	\end{itemize}
      \end{column}
-     	\begin{column}[T]{7cm} 
+     	\begin{column}[T]{6cm} 
          	\begin{center}
-            		\includegraphics[width=0.9\textwidth]{Team2018}\source{}
+            		\includegraphics[width=0.95\textwidth]{Team2019.jpg}\source{}
 		Team Emma {\Large \color{mint!90!black}$\varheartsuit$} J.I.M. \\
-		IMechE Railway Challenge 2018\\ \vspace{.5cm}
+		IMechE Railway Challenge 2019\\ \vspace{.5cm}
 		www.emmalovesjim.com
         		\end{center}
      \end{column}
  \end{columns}
 }
 
-\frame{\frametitle{Was Emma braucht, um erfolgreich zu sein...}
-\framesubtitle{}
-\begin{columns}[t] 
-     \begin{column}[T]{6cm} 
-     	\begin{itemize}
-     		\item<1-> Motivierte Studis
-		\item<2-> Viel Liebe
-		\item<3-> Leere Bierkisten
-		\item<4-> Viel mehr Probefahrten
-		\only<5->{\item Hardware, insbesondere:
-		\begin{itemize}
-		\item Camera und Laserscanner
-		\item Kompakte Batterien
-		\item Federspeicherbremsen
-		\item Kompressor
-		\item 4G/WiFi Connection
-		\item Sandungssystem
-		\end{itemize}
-		}
-     	\end{itemize}
-	%\only<6>{2019 mit Ihnen als Sponsor?}
-     \end{column}
-     	\begin{column}[T]{8cm} 
-         	\begin{center}
-            		\only<1>{\includegraphics[width=1\textwidth]{IMG_0845}}
-			\only<2>{\includegraphics[width=1\textwidth]{DSC_1375}}
-			\only<3>{\includegraphics[width=1\textwidth]{DSC_1777}}
-			\only<4>{\includegraphics[width=1\textwidth]{EmmaCastle}}
-			\only<5->{\vspace{-.5cm}\includegraphics[width=.9\textwidth]{Whishlist}}
-        		\end{center}
-     \end{column}
- \end{columns}
-}
+%\frame{\frametitle{Was Emma braucht, um erfolgreich zu sein...}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{6cm} 
+%     	\begin{itemize}
+%     		\item<1-> Motivierte Studis
+%		\item<2-> Viel Liebe
+%		\item<3-> Leere Bierkisten
+%		\item<4-> Viel mehr Probefahrten
+%		\only<5->{\item Hardware, insbesondere:
+%		\begin{itemize}
+%		\item Camera und Laserscanner
+%		\item Kompakte Batterien
+%		\item Federspeicherbremsen
+%		\item Kompressor
+%		\item 4G/WiFi Connection
+%		\item Sandungssystem
+%		\end{itemize}
+%		}
+%     	\end{itemize}
+%	%\only<6>{2019 mit Ihnen als Sponsor?}
+%     \end{column}
+%     	\begin{column}[T]{8cm} 
+%         	\begin{center}
+%            		\only<1>{\includegraphics[width=1\textwidth]{IMG_0845}}
+%			\only<2>{\includegraphics[width=1\textwidth]{DSC_1375}}
+%			\only<3>{\includegraphics[width=1\textwidth]{DSC_1777}}
+%			\only<4>{\includegraphics[width=1\textwidth]{EmmaCastle}}
+%			\only<5->{\vspace{-.5cm}\includegraphics[width=.9\textwidth]{Whishlist}}
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
 
 {
 \usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastle.jpg}}
@@ -962,36 +967,23 @@ node distance = 1.05cm]
 \item ``Coole Technik hier - und sinnvoll ist es auch!''
 \end{itemize}
 \vspace{-0.5cm}
-\only<2>{\begin{center}
-\Huge \textbf{%\color{mint!75!black}
-Dabei hilft Ihr Engagement!}
-\end{center}}
+%\only<2>{\begin{center}
+%\Huge \textbf{\color{mint!75!black}
+%Dabei hilft Ihr Engagement!}
+%\end{center}}
 }
 }
 
 {
-\usebackgroundtemplate{\transparent{0.4}\includegraphics[width= 1.2\paperwidth]{Lecker}}
-
+\usebackgroundtemplate{\transparent{0.4}\includegraphics[width= 1.45\paperwidth]{Lecker}}
+\centering
 \frame{\frametitle{Let's put awesome back into railways!}
-\begin{center}
-			\vspace{5.5cm}
-            		%\includegraphics[width=.8\textwidth]{Lecker}
-        		\end{center}
-\begin{columns}[t] 
-\begin{column}[T]{1cm} 
-     	\end{column}
-     \begin{column}[T]{7cm} 
-     
-     	%\includegraphics[width = .25 \textwidth]{SlidesVDB}
-     \end{column}
-     	\begin{column}[T]{7cm} 
-		{\color{white}
-		\textbf{Prof. Dr. Raphael Pfaff\\
-		%Rail vehicle engineering\\
-		pfaff@fh-aachen.de\\
-		www.raphaelpfaff.net}}
-     \end{column}
- \end{columns}
-}
+\begin{tikzpicture}
+ \path (0,0) -- (0cm,-7.5cm) node[rectangle, fill = white, opacity = 0.5, text opacity = 1] {Prof. Dr. Raphael Pfaff $\cdot$
+			pfaff@fh-aachen.de $\cdot$
+	+49-151-70052454 $\cdot$
+		www.r10f.com};
+\end{tikzpicture}
+
 }
 \end{document}
