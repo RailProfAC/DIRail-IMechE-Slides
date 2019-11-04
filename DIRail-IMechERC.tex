@@ -73,192 +73,192 @@
 
 
 {
-\usebackgroundtemplate{\transparent{0.4}\includegraphics[width= \paperwidth]{Innotrans.jpg}}
-\frame{\titlepage}
+\usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastlepale}}
+\frame{\titlepage}}
 
-\section{Fachgruppe Schienenfahrzeugtechnik}
-\frame{\vspace{1cm}
-
-\begin{center}
- \color{white} \usebeamerfont{title}{Fachgruppe Schienenfahrzeugtechnik}
-\end{center}
-}
-}
-
-\frame{\frametitle{Wer wir sind}
-\framesubtitle{Bahnerfahrung aus allen Perspektiven: Zulieferer, Hersteller, Betreiber, Wissenschaft}
-\begin{columns}[t] 
-     \begin{column}[T]{7cm} 
-     	\begin{itemize}
-     		\only<1>{\item Prof. Dr.-Ing. M. Enning:
-		\begin{itemize}
-		\item Bahnsystemtechnik
-		\item vormals RWTH Aachen
-		\item Erfahrung:
-		\begin{itemize}
-		\item Regelungstechnik
-		\item Schieneng\"uterverkehr
-		\item Kraftschlussregelungen
-		\item Zugsicherungssysteme
-		\item Netzwerke
-		\item Verkehrsz\"ahlung
-		\end{itemize}
-		\end{itemize}}
-		\only<2>{\item Prof. Dr.-Ing. B. Schmidt
-		\begin{itemize}
-		\item Bahnantriebe
-		\item vormals gro{\ss}e Unternehmensberatung
-		\item Erfahrung:
-		\begin{itemize}
-		\item Verkehrswissenschaft
-		\item Unternehmensberatung
-		\item Lebenszykluskosten
-		\item Zuverl\"assigkeit
-		\item Ausschreibungen
-		\end{itemize}
-		\end{itemize} }
-		\only<3>{\item Prof. Dr. Raphael Pfaff
-		\begin{itemize}
-		\item Schienenfahrzeugtechnik
-		\item vormals Faiveley Transport, Siemens
-		\item Erfahrung
-		\begin{itemize}
-		\item Bremssysteme
-		\item Zug- und Sto{\ss}einrichtungen
-		\item System Engineering
-		\item Konstruktionsleitung
-		\item Zuverl\"assigkeitstechnik
-		\item Claim-Management
-		\item Technischer Vertrieb
-		\end{itemize}
-		\end{itemize}}
-     	\end{itemize}
-     \end{column}
-     	\begin{column}[T]{7cm} 
-         	\begin{center}
-			\vspace{-.7cm}
-            		\includegraphics[width=0.7\textwidth]{Wir}\source{}
-        		\end{center}
-     \end{column}
- \end{columns}
-}
-
-
-
-\frame{\frametitle{CV Raphael Pfaff}
-\framesubtitle{}
-\begin{center}
-\includegraphics[height = 0.8\textheight]{CVGraphic}
-\end{center}
-}
-
-\frame{\frametitle{Wer wir sind}
-\framesubtitle{}
-\begin{center}
-\begin{tikzpicture}
-\node at (5,1) {\includegraphics[width = 5cm]{Roger}};
-\node at (0,1) {\includegraphics[width = 6cm]{Team}};
-\node at (-1,-2) {\includegraphics[width = 6cm]{TrainEmma}};
-
-\node at (4,-2) {\includegraphics[width = 5cm]{InnotransStudis}};
-
-\end{tikzpicture}
-\end{center}
-}
-
-\frame{\frametitle{Was wir tun}
-\framesubtitle{Lehre, Forschung, Entwickung und Beratung entlang des Lebenszyklus im Bahnverkehr}
-\begin{columns}[t] 
-     \begin{column}[T]{7cm} 
-     	\begin{itemize}
-     		\only<1>{\item Lehre:
-		\begin{itemize}
-		\item Schienenfahrzeugtechnik
-		\begin{itemize}
-		\item Mechanisches Subsystem
-		\end{itemize}
-		\item Bahnantriebe
-		\begin{itemize}
-		\item Elektrische Antriebe
-		\item Diesel- und hybride Antriebe
-		\end{itemize}
-		\item Leit- und Sicherungstechnik
-		\item Steuerungs- und Simulationstechnik
-		\item Herstellung und Vermarktung
-		\item Antriebstechnik
-		\begin{itemize}
-		\item Elektrische Antriebe
-		\item Fluidtechnik
-		\end{itemize}
-		\item Statistische Methoden
-		\item Methoden des QM
-		\end{itemize}}
-		\only<2->{\item Current R\&D foci:
-		\begin{itemize}
-		\item IoT-connected wagon ``Wagon 4.0''
-		\item Refurbishment of legacy electrical locomotives
-		\item Reliability Estimation using Big Data approaches
-		\item Usage of Additive Manufacturing 
-		\item Wheel-Rail-Contact Modelling% under sanding
-		\item Ad hoc-Estimation of braking curves
-		\item Applications of machine learning for railways  
-		\end{itemize}}
-     	\end{itemize}
-     \end{column}
-     	\begin{column}[T]{7cm} 
-         	\begin{center}
-            		\only<1>{\includegraphics[width=0.8\textwidth]{Lehre}\source{}}
-			%%
-			\only<2>{\includegraphics[width=0.95\textwidth]{TrainConceptWagon40}\source{}}
-			\only<3>{\includegraphics[width=0.7\textwidth]{Rekuperation}\source{}}
-			%%
-			\only<4>{
-			\vspace{-.6cm}
-			\begin{tikzpicture}
-                            \begin{axis}[no marks,
-                            xmax=15, xmin = 0,
-                             ymin = 0, ymax = 1, grid=both,
-                            %axis lines=middle, 
-                            %ylabel = {$p$},
-                            xlabel = {$t/\mathrm{a}$},
-                            legend entries={$\bar{F}$, $h$, $\bar{F}_{\text{main}}$, $\hat{F}$, 
-                            $\hat{h}$}, 
-                            legend style = {at={(0.05,0.5)},
-                                    anchor=west}]
-                            
-                              \addplot[thick, draw = magenta!70!black] table[x=t,y=Fq] {WeibullEstCensored.dat}; 
-                            
-                             \addplot[thick, draw = orange!80!black] table[x=t,y=h] {WeibullEstCensored.dat}; 
-                            
-                             \addplot[thick, draw = red!70!black] table[x=t,y=Fqest] {WeibullEstCensored2.dat}; 
-                                
-                              
-                              \addplot[thick, draw = green!70!black] table[x=t,y=Fqsim] {WeibullEstCensored.dat}; 
-                              
-                              
-                             \addplot[thick, draw = blue!70!black] table[x=t,y=hest] {WeibullEstCensored.dat}
-                             coordinate [pos=0.5] (A)
-                               coordinate [pos=0.6]  (B)
-                             ; 
-                             \fill[fill = blue!70!black, opacity = .7] (A) -| (B)
-                             node [pos=0.75,anchor=west]
-                                 {$\triangle h$};
-                             \end{axis}
-                            \end{tikzpicture}
-                            }
-                            \only<5>{\includegraphics[width=0.2\textwidth]{TestFeder4b} \hspace{3mm}
-                            		\includegraphics[width=0.2\textwidth]{TestFeder4a} \vspace{3mm}\\
-					\includegraphics[width=0.2\textwidth]{TestFeder1b}\hspace{3mm}
-					\includegraphics[width=0.4\textwidth]{TestFeder1a}}
-                            \only<6>{\includegraphics[width=0.9\textwidth]{AreaComp}\source{}}
-                            \only<7>{\vspace{-.6cm}
-                            \includegraphics[width=0.7\textwidth]{ETCSmhist}\\
-                            		\hspace{1.5cm} \includegraphics[width=0.7\textwidth]{ETCShist}}
-		\only<8>{\includegraphics[width=0.9\textwidth]{170505GPCascadeClassifier}}
-        		\end{center}
-     \end{column}
- \end{columns}
-}
+%\section{Fachgruppe Schienenfahrzeugtechnik}
+%\frame{\vspace{1cm}
+%
+%\begin{center}
+% \color{white} \usebeamerfont{title}{Fachgruppe Schienenfahrzeugtechnik}
+%\end{center}
+%}
+%}
+%
+%\frame{\frametitle{Wer wir sind}
+%\framesubtitle{Bahnerfahrung aus allen Perspektiven: Zulieferer, Hersteller, Betreiber, Wissenschaft}
+%\begin{columns}[t] 
+%     \begin{column}[T]{7cm} 
+%     	\begin{itemize}
+%     		\only<1>{\item Prof. Dr.-Ing. M. Enning:
+%		\begin{itemize}
+%		\item Bahnsystemtechnik
+%		\item vormals RWTH Aachen
+%		\item Erfahrung:
+%		\begin{itemize}
+%		\item Regelungstechnik
+%		\item Schieneng\"uterverkehr
+%		\item Kraftschlussregelungen
+%		\item Zugsicherungssysteme
+%		\item Netzwerke
+%		\item Verkehrsz\"ahlung
+%		\end{itemize}
+%		\end{itemize}}
+%		\only<2>{\item Prof. Dr.-Ing. B. Schmidt
+%		\begin{itemize}
+%		\item Bahnantriebe
+%		\item vormals gro{\ss}e Unternehmensberatung
+%		\item Erfahrung:
+%		\begin{itemize}
+%		\item Verkehrswissenschaft
+%		\item Unternehmensberatung
+%		\item Lebenszykluskosten
+%		\item Zuverl\"assigkeit
+%		\item Ausschreibungen
+%		\end{itemize}
+%		\end{itemize} }
+%		\only<3>{\item Prof. Dr. Raphael Pfaff
+%		\begin{itemize}
+%		\item Schienenfahrzeugtechnik
+%		\item vormals Faiveley Transport, Siemens
+%		\item Erfahrung
+%		\begin{itemize}
+%		\item Bremssysteme
+%		\item Zug- und Sto{\ss}einrichtungen
+%		\item System Engineering
+%		\item Konstruktionsleitung
+%		\item Zuverl\"assigkeitstechnik
+%		\item Claim-Management
+%		\item Technischer Vertrieb
+%		\end{itemize}
+%		\end{itemize}}
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{7cm} 
+%         	\begin{center}
+%			\vspace{-.7cm}
+%            		\includegraphics[width=0.7\textwidth]{Wir}\source{}
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
+%
+%
+%
+%\frame{\frametitle{CV Raphael Pfaff}
+%\framesubtitle{}
+%\begin{center}
+%\includegraphics[height = 0.8\textheight]{CVGraphic}
+%\end{center}
+%}
+%
+%\frame{\frametitle{Wer wir sind}
+%\framesubtitle{}
+%\begin{center}
+%\begin{tikzpicture}
+%\node at (5,1) {\includegraphics[width = 5cm]{Roger}};
+%\node at (0,1) {\includegraphics[width = 6cm]{Team}};
+%\node at (-1,-2) {\includegraphics[width = 6cm]{TrainEmma}};
+%
+%\node at (4,-2) {\includegraphics[width = 5cm]{InnotransStudis}};
+%
+%\end{tikzpicture}
+%\end{center}
+%}
+%
+%\frame{\frametitle{Was wir tun}
+%\framesubtitle{Lehre, Forschung, Entwickung und Beratung entlang des Lebenszyklus im Bahnverkehr}
+%\begin{columns}[t] 
+%     \begin{column}[T]{7cm} 
+%     	\begin{itemize}
+%     		\only<1>{\item Lehre:
+%		\begin{itemize}
+%		\item Schienenfahrzeugtechnik
+%		\begin{itemize}
+%		\item Mechanisches Subsystem
+%		\end{itemize}
+%		\item Bahnantriebe
+%		\begin{itemize}
+%		\item Elektrische Antriebe
+%		\item Diesel- und hybride Antriebe
+%		\end{itemize}
+%		\item Leit- und Sicherungstechnik
+%		\item Steuerungs- und Simulationstechnik
+%		\item Herstellung und Vermarktung
+%		\item Antriebstechnik
+%		\begin{itemize}
+%		\item Elektrische Antriebe
+%		\item Fluidtechnik
+%		\end{itemize}
+%		\item Statistische Methoden
+%		\item Methoden des QM
+%		\end{itemize}}
+%		\only<2->{\item Current R\&D foci:
+%		\begin{itemize}
+%		\item IoT-connected wagon ``Wagon 4.0''
+%		\item Refurbishment of legacy electrical locomotives
+%		\item Reliability Estimation using Big Data approaches
+%		\item Usage of Additive Manufacturing 
+%		\item Wheel-Rail-Contact Modelling% under sanding
+%		\item Ad hoc-Estimation of braking curves
+%		\item Applications of machine learning for railways  
+%		\end{itemize}}
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{7cm} 
+%         	\begin{center}
+%            		\only<1>{\includegraphics[width=0.8\textwidth]{Lehre}\source{}}
+%			%%
+%			\only<2>{\includegraphics[width=0.95\textwidth]{TrainConceptWagon40}\source{}}
+%			\only<3>{\includegraphics[width=0.7\textwidth]{Rekuperation}\source{}}
+%			%%
+%			\only<4>{
+%			\vspace{-.6cm}
+%			\begin{tikzpicture}
+%                            \begin{axis}[no marks,
+%                            xmax=15, xmin = 0,
+%                             ymin = 0, ymax = 1, grid=both,
+%                            %axis lines=middle, 
+%                            %ylabel = {$p$},
+%                            xlabel = {$t/\mathrm{a}$},
+%                            legend entries={$\bar{F}$, $h$, $\bar{F}_{\text{main}}$, $\hat{F}$, 
+%                            $\hat{h}$}, 
+%                            legend style = {at={(0.05,0.5)},
+%                                    anchor=west}]
+%                            
+%                              \addplot[thick, draw = magenta!70!black] table[x=t,y=Fq] {WeibullEstCensored.dat}; 
+%                            
+%                             \addplot[thick, draw = orange!80!black] table[x=t,y=h] {WeibullEstCensored.dat}; 
+%                            
+%                             \addplot[thick, draw = red!70!black] table[x=t,y=Fqest] {WeibullEstCensored2.dat}; 
+%                                
+%                              
+%                              \addplot[thick, draw = green!70!black] table[x=t,y=Fqsim] {WeibullEstCensored.dat}; 
+%                              
+%                              
+%                             \addplot[thick, draw = blue!70!black] table[x=t,y=hest] {WeibullEstCensored.dat}
+%                             coordinate [pos=0.5] (A)
+%                               coordinate [pos=0.6]  (B)
+%                             ; 
+%                             \fill[fill = blue!70!black, opacity = .7] (A) -| (B)
+%                             node [pos=0.75,anchor=west]
+%                                 {$\triangle h$};
+%                             \end{axis}
+%                            \end{tikzpicture}
+%                            }
+%                            \only<5>{\includegraphics[width=0.2\textwidth]{TestFeder4b} \hspace{3mm}
+%                            		\includegraphics[width=0.2\textwidth]{TestFeder4a} \vspace{3mm}\\
+%					\includegraphics[width=0.2\textwidth]{TestFeder1b}\hspace{3mm}
+%					\includegraphics[width=0.4\textwidth]{TestFeder1a}}
+%                            \only<6>{\includegraphics[width=0.9\textwidth]{AreaComp}\source{}}
+%                            \only<7>{\vspace{-.6cm}
+%                            \includegraphics[width=0.7\textwidth]{ETCSmhist}\\
+%                            		\hspace{1.5cm} \includegraphics[width=0.7\textwidth]{ETCShist}}
+%		\only<8>{\includegraphics[width=0.9\textwidth]{170505GPCascadeClassifier}}
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
 
 {
 \usebackgroundtemplate{\includegraphics[width= \paperwidth]{DualesStudium.jpg}}
@@ -285,7 +285,7 @@
 		\item Ausbildungsintegriert dual
 		\begin{itemize}
 		\item 9 oder 11 Semester
-		\item Abh\"angig von der Wahl des Vertiefungsstudiums
+		\item Abh\"angig von der Form des Vertiefungsstudiums (Vollzeit/Teilzeit)
 		\end{itemize}
 		\item Teilzeit
 		\begin{itemize}
@@ -566,6 +566,12 @@ node distance = 1.05cm]
 \item[$\square$] Abstimmung mit lokaler IHK - begleitet durch FH-Beauftragten A. Beumers
 \item[$\square$] Ggf. Unterst\"utzung bei Marketing und Auswahl
 \end{itemize}
+\vspace{2cm}
+
+Kontakt:\\
+Prof. Dr. Raphael Pfaff\\
+pfaff@fh-aachen.de\\
++49-151-70052454
 }
 
 
@@ -805,170 +811,170 @@ node distance = 1.05cm]
 % \end{columns}
 %}
 
-
-
-{
-\usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastle.jpg}}
-
-\section{IMechE Railway Challenge}
-\frame{\vspace{1cm}
-
-\begin{center}
- \color{white} \usebeamerfont{title}{IMechE Railway Challenge}
-\end{center}
-}
-}
-
-
-\frame{\frametitle{Was ist die IMechE Railway Challenge?}
-\framesubtitle{Die IMechE nutzt viele Kan\"ale, um junge Menschen f\"ur die Eisenbahn zu begeistern, die Railway Challenge ist einer davon.}
-\begin{columns}[t] 
-     \begin{column}[T]{7cm} 
-     	\begin{itemize}
-     		\item Wettbewerb auf Parkbahnanlage:
-		\begin{itemize}
-		\item Relevante Disziplinen, z.B. 
-		\begin{itemize}
-		\item L\"armreduzierung
-		\item Energier\"uckgewinnung
-		\item Innovation
-		\item Business Case
-		\end{itemize}
-		\end{itemize}
-		\item Raum f\"ur Innovation:
-		\begin{itemize}
-		\item H$_{2}$-Brennstoffzelle
-		\item IoT-Connection
-		\item Autonomes Fahren (geplant f\"ur 2019)
-		\end{itemize}
-		\item FH Aachen ist erster ``Overseas Entry''
-     	\end{itemize}
-     \end{column}
-     	\begin{column}[T]{7cm} 
-         	\begin{center}
-	\vspace{-1cm}
-            		\includegraphics[width=0.7\textwidth]{EmmaSeite}
-        		\end{center}
-     \end{column}
- \end{columns}
-}
-
-\frame{\frametitle{Welchen Vorteil haben die Studierenden?}
-\framesubtitle{Das Erlernte kann sofort in die Praxis eingebracht werden, es kann diskutiert, geschraubt, get\"uftelt und getestet werden. Durch die Abbildung des gesamten Lebenszyklus' ist f\"ur jeden etwas dabei!}
-\begin{columns}[t] 
-     \begin{column}[T]{7cm} 
-     	\begin{itemize}
-     		\item Praxiserfahrung
-		\item Vernetzung
-		\item Roter Faden durch Lehrveranstaltungen und Praktika
-		\item Internationalit\"at
-		\item Vertiefung ohne B\"uffeln
-		\item Sich ausprobieren k\"onnen
-		\item Erfolge genie{\ss}en
-		\item Aus Misserfolgen lernen
-		\item Spa{\ss}!
-     	\end{itemize}
-     \end{column}
-     	\begin{column}[T]{7cm} 
-         	\begin{center}
-		\vspace{-.5cm}
-            		\href{https://www.youtube.com/watch?v=_z9fII6lbig}{\includegraphics[width=0.9\textwidth]{Winners2018}}\\
-			Team FH$_{2}$Rail\\
-			IMechE Railway Challenge 2018\\ \vspace{.5cm}
-			4. Platz von 12 Teilnehmern
-        		\end{center}
-     \end{column}
- \end{columns}
-}
-
-\frame{\frametitle{Sponsoring f\"ur Emma und das Team?}
-\framesubtitle{}
-\begin{columns}[t] 
-     \begin{column}[T]{7cm} 
-     	\begin{itemize}
-     		\item Nationale und internationale Sichtbarkeit (Youtube, Facebook, Innotrans, ...)
+%
+%
+%{
+%\usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastle.jpg}}
+%
+%\section{IMechE Railway Challenge}
+%\frame{\vspace{1cm}
+%
+%\begin{center}
+% \color{white} \usebeamerfont{title}{IMechE Railway Challenge}
+%\end{center}
+%}
+%}
+%
+%
+%\frame{\frametitle{Was ist die IMechE Railway Challenge?}
+%\framesubtitle{Die IMechE nutzt viele Kan\"ale, um junge Menschen f\"ur die Eisenbahn zu begeistern, die Railway Challenge ist einer davon.}
+%\begin{columns}[t] 
+%     \begin{column}[T]{7cm} 
+%     	\begin{itemize}
+%     		\item Wettbewerb auf Parkbahnanlage:
 %		\begin{itemize}
-%		\item Marke
-%		\item Technologie
+%		\item Relevante Disziplinen, z.B. 
+%		\begin{itemize}
+%		\item L\"armreduzierung
+%		\item Energier\"uckgewinnung
+%		\item Innovation
+%		\item Business Case
 %		\end{itemize}
-		\item Engagement im Bereich Nachwuchsgewinnung
-		\item Direkten Kontakt zu Studierenden
-		\item Studierende in Ber\"uhrung mit eigenen Technologien bringen
-		\item Sponsoring Pakete:
-		\begin{itemize}
-		\item Namenssponsor (5000 \euro) (verkauft)
-		\item Logo auf Lok (500/1000 \euro)
-		\item Warnwesten-Sponsor (2000 \euro)
-		\item Dinner-Sponsor (800 \euro) (verkauft)
-		\end{itemize}
-		\item F\"ur alle Pakete: Sponsoren-Event mit Studierenden
-     	\end{itemize}
-     \end{column}
-     	\begin{column}[T]{7cm} 
-         	\begin{center}
-            		\includegraphics[width=0.9\textwidth]{Team2018}\source{}
-		Team Emma {\Large \color{mint!90!black}$\varheartsuit$} J.I.M. \\
-		IMechE Railway Challenge 2018\\ \vspace{.5cm}
-		www.emmalovesjim.com
-        		\end{center}
-     \end{column}
- \end{columns}
-}
-
-\frame{\frametitle{Was Emma braucht, um erfolgreich zu sein...}
-\framesubtitle{}
-\begin{columns}[t] 
-     \begin{column}[T]{6cm} 
-     	\begin{itemize}
-     		\item<1-> Motivierte Studis
-		\item<2-> Viel Liebe
-		\item<3-> Leere Bierkisten
-		\item<4-> Viel mehr Probefahrten
-		\only<5->{\item Hardware, insbesondere:
-		\begin{itemize}
-		\item Camera und Laserscanner
-		\item Kompakte Batterien
-		\item Federspeicherbremsen
-		\item Kompressor
-		\item 4G/WiFi Connection
-		\item Sandungssystem
-		\end{itemize}
-		}
-     	\end{itemize}
-	%\only<6>{2019 mit Ihnen als Sponsor?}
-     \end{column}
-     	\begin{column}[T]{8cm} 
-         	\begin{center}
-            		\only<1>{\includegraphics[width=1\textwidth]{IMG_0845}}
-			\only<2>{\includegraphics[width=1\textwidth]{DSC_1375}}
-			\only<3>{\includegraphics[width=1\textwidth]{DSC_1777}}
-			\only<4>{\includegraphics[width=1\textwidth]{EmmaCastle}}
-			\only<5->{\vspace{-.5cm}\includegraphics[width=.9\textwidth]{Whishlist}}
-        		\end{center}
-     \end{column}
- \end{columns}
-}
-
-{
-\usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastle.jpg}}
-
-\frame{\frametitle{\color{white}Was k\"onnen Emma und das Team der Bahnindustrie geben?}
-\framesubtitle{}
-\begin{itemize} \color{white}
-\item Neues Bild von Studium und Beruf im Bereich Bahn
-\item Jugendliche Darstellung
-\item ``Du bist hier willkommen!''
-\item ``Du kannst etwas ausprobieren und etwas bewegen!''
-\item ``Coole Technik hier - und sinnvoll ist es auch!''
-\end{itemize}
-\vspace{-0.5cm}
-\only<2>{\begin{center}
-\Huge \textbf{%\color{mint!75!black}
-Dabei hilft Ihr Engagement!}
-\end{center}}
-}
-}
-
+%		\end{itemize}
+%		\item Raum f\"ur Innovation:
+%		\begin{itemize}
+%		\item H$_{2}$-Brennstoffzelle
+%		\item IoT-Connection
+%		\item Autonomes Fahren (geplant f\"ur 2019)
+%		\end{itemize}
+%		\item FH Aachen ist erster ``Overseas Entry''
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{7cm} 
+%         	\begin{center}
+%	\vspace{-1cm}
+%            		\includegraphics[width=0.7\textwidth]{EmmaSeite}
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
+%
+%\frame{\frametitle{Welchen Vorteil haben die Studierenden?}
+%\framesubtitle{Das Erlernte kann sofort in die Praxis eingebracht werden, es kann diskutiert, geschraubt, get\"uftelt und getestet werden. Durch die Abbildung des gesamten Lebenszyklus' ist f\"ur jeden etwas dabei!}
+%\begin{columns}[t] 
+%     \begin{column}[T]{7cm} 
+%     	\begin{itemize}
+%     		\item Praxiserfahrung
+%		\item Vernetzung
+%		\item Roter Faden durch Lehrveranstaltungen und Praktika
+%		\item Internationalit\"at
+%		\item Vertiefung ohne B\"uffeln
+%		\item Sich ausprobieren k\"onnen
+%		\item Erfolge genie{\ss}en
+%		\item Aus Misserfolgen lernen
+%		\item Spa{\ss}!
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{7cm} 
+%         	\begin{center}
+%		\vspace{-.5cm}
+%            		\href{https://www.youtube.com/watch?v=_z9fII6lbig}{\includegraphics[width=0.9\textwidth]{Winners2018}}\\
+%			Team FH$_{2}$Rail\\
+%			IMechE Railway Challenge 2018\\ \vspace{.5cm}
+%			4. Platz von 12 Teilnehmern
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
+%
+%\frame{\frametitle{Sponsoring f\"ur Emma und das Team?}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{7cm} 
+%     	\begin{itemize}
+%     		\item Nationale und internationale Sichtbarkeit (Youtube, Facebook, Innotrans, ...)
+%%		\begin{itemize}
+%%		\item Marke
+%%		\item Technologie
+%%		\end{itemize}
+%		\item Engagement im Bereich Nachwuchsgewinnung
+%		\item Direkten Kontakt zu Studierenden
+%		\item Studierende in Ber\"uhrung mit eigenen Technologien bringen
+%		\item Sponsoring Pakete:
+%		\begin{itemize}
+%		\item Namenssponsor (5000 \euro) (verkauft)
+%		\item Logo auf Lok (500/1000 \euro)
+%		\item Warnwesten-Sponsor (2000 \euro)
+%		\item Dinner-Sponsor (800 \euro) (verkauft)
+%		\end{itemize}
+%		\item F\"ur alle Pakete: Sponsoren-Event mit Studierenden
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{7cm} 
+%         	\begin{center}
+%            		\includegraphics[width=0.9\textwidth]{Team2018}\source{}
+%		Team Emma {\Large \color{mint!90!black}$\varheartsuit$} J.I.M. \\
+%		IMechE Railway Challenge 2018\\ \vspace{.5cm}
+%		www.emmalovesjim.com
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
+%
+%\frame{\frametitle{Was Emma braucht, um erfolgreich zu sein...}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{6cm} 
+%     	\begin{itemize}
+%     		\item<1-> Motivierte Studis
+%		\item<2-> Viel Liebe
+%		\item<3-> Leere Bierkisten
+%		\item<4-> Viel mehr Probefahrten
+%		\only<5->{\item Hardware, insbesondere:
+%		\begin{itemize}
+%		\item Camera und Laserscanner
+%		\item Kompakte Batterien
+%		\item Federspeicherbremsen
+%		\item Kompressor
+%		\item 4G/WiFi Connection
+%		\item Sandungssystem
+%		\end{itemize}
+%		}
+%     	\end{itemize}
+%	%\only<6>{2019 mit Ihnen als Sponsor?}
+%     \end{column}
+%     	\begin{column}[T]{8cm} 
+%         	\begin{center}
+%            		\only<1>{\includegraphics[width=1\textwidth]{IMG_0845}}
+%			\only<2>{\includegraphics[width=1\textwidth]{DSC_1375}}
+%			\only<3>{\includegraphics[width=1\textwidth]{DSC_1777}}
+%			\only<4>{\includegraphics[width=1\textwidth]{EmmaCastle}}
+%			\only<5->{\vspace{-.5cm}\includegraphics[width=.9\textwidth]{Whishlist}}
+%        		\end{center}
+%     \end{column}
+% \end{columns}
+%}
+%
+%{
+%\usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastle.jpg}}
+%
+%\frame{\frametitle{\color{white}Was k\"onnen Emma und das Team der Bahnindustrie geben?}
+%\framesubtitle{}
+%\begin{itemize} \color{white}
+%\item Neues Bild von Studium und Beruf im Bereich Bahn
+%\item Jugendliche Darstellung
+%\item ``Du bist hier willkommen!''
+%\item ``Du kannst etwas ausprobieren und etwas bewegen!''
+%\item ``Coole Technik hier - und sinnvoll ist es auch!''
+%\end{itemize}
+%\vspace{-0.5cm}
+%\only<2>{\begin{center}
+%\Huge \textbf{%\color{mint!75!black}
+%Dabei hilft Ihr Engagement!}
+%\end{center}}
+%}
+%}
+%
 {
 \usebackgroundtemplate{\transparent{0.4}\includegraphics[width= 1.2\paperwidth]{Lecker}}
 
