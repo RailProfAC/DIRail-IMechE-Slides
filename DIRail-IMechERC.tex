@@ -1,7 +1,7 @@
 \documentclass[slidestop,compress,mathserif, aspectratio = 169]{beamer}
-\usecolortheme{seagull} % Beamer color theme
-\useinnertheme{rectangles}
-\usepackage[round]{natbib}
+\usetheme{metropolis}
+%\usepackage{helvet}
+\useinnertheme{rectangles}\usepackage[round]{natbib}
 \usepackage{bibentry}
 \usepackage{graphicx}
 \usepackage{epigraph}
@@ -46,16 +46,6 @@
 
  \pgfplotsset{width=7cm, height = 7cm}
 
- \setbeamertemplate{section page}
-{
-    \begin{centering}
-    \vspace{2cm}
-    \begin{beamercolorbox}[sep=12pt,center]{part title}
-    \usebeamerfont{title}\insertsection\par
-    \end{beamercolorbox}
-    \end{centering}
-}
-
 
 
 \begin{document}
@@ -65,25 +55,23 @@
 \newcommand{\done}{${\color{teal}\checkmark}$}
 
 %% Formalia
-\title{DI Rail - Schienenfahrzeugtechnik dual studieren}
+\title{IMechE Railway Challenge}
+\subtitle{Praxisnah und ``as sexy as we can possibly get''}
 \author{Raphael Pfaff}
 \institute[FH Aachen]{Fachhochschule Aachen}
-\logo{\put(-18, 170){\includegraphics[width=1.4cm]{logoR}}}
+\logo{\put(-18, -100){\includegraphics[width=1.4cm]{logoR}}}
 
 
 
-{
-\usebackgroundtemplate{\transparent{0.4}\includegraphics[width= \paperwidth]{Innotrans.jpg}}
+
+\usebackgroundtemplate{\includegraphics[width= \paperwidth]{Innotrans2018pale.jpg}}
+
 \frame{\titlepage}
 
 \section{Fachgruppe Schienenfahrzeugtechnik}
-\frame{\vspace{1cm}
 
-\begin{center}
- \color{white} \usebeamerfont{title}{Fachgruppe Schienenfahrzeugtechnik}
-\end{center}
-}
-}
+\usebackgroundtemplate{}
+
 
 \frame{\frametitle{Wer wir sind}
 \framesubtitle{Bahnerfahrung aus allen Perspektiven: Zulieferer, Hersteller, Betreiber, Wissenschaft}
@@ -144,32 +132,32 @@
 }
 
 
-%
-%\frame{\frametitle{CV Raphael Pfaff}
-%\framesubtitle{}
-%\begin{center}
-%\includegraphics[height = 0.8\textheight]{CVGraphic}
-%\end{center}
-%}
-%
-%\frame{\frametitle{Wer wir sind}
-%\framesubtitle{}
-%\begin{center}
-%\begin{tikzpicture}
-%\node at (5,1) {\includegraphics[width = 5cm]{Roger}};
-%\node at (0,1) {\includegraphics[width = 6cm]{Team}};
-%\node at (-1,-2) {\includegraphics[width = 6cm]{TrainEmma}};
-%
-%\node at (4,-2) {\includegraphics[width = 5cm]{InnotransStudis}};
-%
-%\end{tikzpicture}
-%\end{center}
-%}
+
+\frame{\frametitle{CV Raphael Pfaff}
+\framesubtitle{}
+\begin{center}
+\includegraphics[height = 0.8\textheight]{CVGraphics}
+\end{center}
+}
+
+\frame{\frametitle{Wer wir sind}
+\framesubtitle{}
+\begin{center}
+\begin{tikzpicture}
+\node at (5,1) {\includegraphics[width = 5cm]{Roger}};
+\node at (0,1) {\includegraphics[width = 6cm]{Team}};
+\node at (-1,-2) {\includegraphics[width = 6cm]{TrainEmma}};
+
+\node at (4,-2) {\includegraphics[width = 5cm]{Studis}};
+
+\end{tikzpicture}
+\end{center}
+}
 
 \frame{\frametitle{Was wir tun}
 \framesubtitle{Lehre, Forschung, Entwickung und Beratung entlang des Lebenszyklus im Bahnverkehr}
 \begin{columns}[t] 
-     \begin{column}[T]{7cm} 
+     \begin{column}[T]{6cm} 
      	\begin{itemize}
      		\only<1>{\item Lehre:
 		\begin{itemize}
@@ -193,85 +181,43 @@
 %		\item Statistische Methoden
 %		\item Methoden des QM
 		\end{itemize}}
-%		\only<2->{\item Current R\&D foci:
-%		\begin{itemize}
-%		\item IoT-connected wagon ``Wagon 4.0''
-%		\item Refurbishment of legacy electrical locomotives
-%		\item Reliability Estimation using Big Data approaches
-%		\item Usage of Additive Manufacturing 
-%		\item Wheel-Rail-Contact Modelling% under sanding
-%		\item Ad hoc-Estimation of braking curves
-%		\item Applications of machine learning for railways  
-%		\end{itemize}}
+		\only<2->{\item Schwerpunkte in Forschung und Entwicklung:
+		\begin{itemize}
+		\item Smarter, angetriebener ``G\"uterwagen 4.0''
+		\item KI und Computer Vision f\"ur autonomen Rangierbetrieb
+		\item ``R\"uckfahrkamera'' f\"ur G\"uterz\"uge SAMIRA
+		\item Zuverl\"assigkeitssch\"atzung mittels Big Data - Startup RailCrowd
+		\item Hybridisierung und Elektrifizierung
+		\item Ad hoc-Sch\"atzung von Bremskurven
+	\end{itemize}}
      	\end{itemize}
      \end{column}
-     	\begin{column}[T]{7cm} 
+     	\begin{column}[T]{8cm} 
          	\begin{center}
             		\only<1>{\includegraphics[width=0.8\textwidth]{Lehre}\source{}}
-			%%
-%			\only<2>{\includegraphics[width=0.95\textwidth]{TrainConceptWagon40}\source{}}
-%			\only<3>{\includegraphics[width=0.7\textwidth]{Rekuperation}\source{}}
-%			%%
-%			\only<4>{
-%			\vspace{-.6cm}
-%			\begin{tikzpicture}
-%                            \begin{axis}[no marks,
-%                            xmax=15, xmin = 0,
-%                             ymin = 0, ymax = 1, grid=both,
-%                            %axis lines=middle, 
-%                            %ylabel = {$p$},
-%                            xlabel = {$t/\mathrm{a}$},
-%                            legend entries={$\bar{F}$, $h$, $\bar{F}_{\text{main}}$, $\hat{F}$, 
-%                            $\hat{h}$}, 
-%                            legend style = {at={(0.05,0.5)},
-%                                    anchor=west}]
-%                            
-%                              \addplot[thick, draw = magenta!70!black] table[x=t,y=Fq] {WeibullEstCensored.dat}; 
-%                            
-%                             \addplot[thick, draw = orange!80!black] table[x=t,y=h] {WeibullEstCensored.dat}; 
-%                            
-%                             \addplot[thick, draw = red!70!black] table[x=t,y=Fqest] {WeibullEstCensored2.dat}; 
-%                                
-%                              
-%                              \addplot[thick, draw = green!70!black] table[x=t,y=Fqsim] {WeibullEstCensored.dat}; 
-%                              
-%                              
-%                             \addplot[thick, draw = blue!70!black] table[x=t,y=hest] {WeibullEstCensored.dat}
-%                             coordinate [pos=0.5] (A)
-%                               coordinate [pos=0.6]  (B)
-%                             ; 
-%                             \fill[fill = blue!70!black, opacity = .7] (A) -| (B)
-%                             node [pos=0.75,anchor=west]
-%                                 {$\triangle h$};
-%                             \end{axis}
-%                            \end{tikzpicture}
-%                            }
-%                            \only<5>{\includegraphics[width=0.2\textwidth]{TestFeder4b} \hspace{3mm}
-%                            		\includegraphics[width=0.2\textwidth]{TestFeder4a} \vspace{3mm}\\
-%					\includegraphics[width=0.2\textwidth]{TestFeder1b}\hspace{3mm}
-%					\includegraphics[width=0.4\textwidth]{TestFeder1a}}
-%                            \only<6>{\includegraphics[width=0.9\textwidth]{AreaComp}\source{}}
-%                            \only<7>{\vspace{-.6cm}
-%                            \includegraphics[width=0.7\textwidth]{ETCSmhist}\\
-%                            		\hspace{1.5cm} \includegraphics[width=0.7\textwidth]{ETCShist}}
-%		\only<8>{\includegraphics[width=0.9\textwidth]{170505GPCascadeClassifier}}
+	%%Wagon40
+			\only<2>{\includegraphics[width=\textwidth]{Wagon40Structure}\source{}}
+			\only<3>{\includegraphics[width=\textwidth]{werksbahn40}\source{}}
+	%% KI und Computer Vision
+			\only<4>{\includegraphics[width=\textwidth]{TrackVideoAnalysis}\source{}} 
+	%% SAMIRA
+                            \only<5>{\includegraphics[width=\textwidth]{Datenfluss}\source{}}
+         %% RailCrowd
+                            \only<6>{\includegraphics[width=.9\textwidth]{RailCrowd}\source{}}
+          %% Hybridisierung 
+                            \only<7>{\includegraphics[width=.8\textwidth]{JIMPowerVelocity}\source{}}
+                            \only<8>{\includegraphics[width=.9\textwidth]{BCHist}\source{}}
         		\end{center}
      \end{column}
  \end{columns}
 }
 
-{
 \usebackgroundtemplate{\includegraphics[width= \paperwidth]{DualesStudium.jpg}}
 
-\section{Dualer Studiengang BEng Schienenfahrzeugtechnik}
-\frame{\vspace{1.5cm}
+\section{BEng Schienenfahrzeugtechnik}
 
-\begin{center}
- \color{white} \usebeamerfont{title}{Studiengang BEng Schienenfahrzeugtechnik\\
- DI Rail - Duale Ingenieurausbildung Schienenfahrzeugtechnik}
-\end{center}
-}
-}
+\usebackgroundtemplate{}
+
 
 \frame{\frametitle{Ein Studiengang - drei Studienmodelle}
 \framesubtitle{}
@@ -373,13 +319,13 @@
 scale = 0.5,
 modrect/.style={rectangle,align = center, 
 draw = mint!75!black, 
-fill =mint!75!black, opacity = 0.7, minimum width = 2.5cm, minimum height = .95cm, rounded corners}, 
+fill =mint!75!black, opacity = 0.7, minimum width = 2.5cm, minimum height = 1cm, rounded corners}, 
 veearr/.style={>=stealth, ->,line width = 6, draw = gray, opacity = 1}, 
 semrect/.style={rectangle, align = center, 
 draw = gray!50, 
 fill =gray!50, opacity = 0.7, rounded corners, minimum height = 7.5cm, minimum width = 2.7cm},
 modarr/.style={>=stealth, ->,line width = 3, draw = gray, opacity = 1}, 
-node distance = 1.05cm]
+node distance = 1.1cm]
 
 \node[semrect] at (-11,-8.2) {};
 \node (1) at (-11,-2) {1. Semester };
@@ -412,90 +358,90 @@ node distance = 1.05cm]
 
 
 
-\frame{\frametitle{Struktur des Studiengangs - Basisstudium dual}
-\framesubtitle{}
-\tikzset{font=\small}
-%\begin{center}
-\begin{tikzpicture}[
-scale = 0.5,
-modrect/.style={rectangle,align = center, 
-draw = mint!75!black, 
-fill =mint!75!black, opacity = 0.7, minimum width = 2.5cm, minimum height = .95cm, rounded corners}, 
-veearr/.style={>=stealth, ->,line width = 6, draw = gray, opacity = 1}, 
-semrect/.style={rectangle, align = center, 
-draw = gray!50, 
-fill =gray!50, opacity = 0.7, rounded corners, minimum height = 7.2cm, minimum width = 2.7cm},
-modarr/.style={>=stealth, ->,line width = 3, draw = gray, opacity = 1}, 
-node distance = 1.05cm]
-
-\node[semrect] at (-11,-8.2) {};
-\node (1) at (-11,-1.7) {1. Semester };
-\node [modrect, below of = 1, draw] (M1) {Mathematik 1};
-\node[modrect, below of = M1, draw]  (TM1) {Technische\\Mechanik 1};
+%\frame{\frametitle{Struktur des Studiengangs - Basisstudium dual}
+%\framesubtitle{}
+%\tikzset{font=\small}
+%%\begin{center}
+%\begin{tikzpicture}[
+%scale = 0.5,
+%modrect/.style={rectangle,align = center, 
+%draw = mint!75!black, 
+%fill =mint!75!black, opacity = 0.7, minimum width = 2.5cm, minimum height = 1cm, rounded corners}, 
+%veearr/.style={>=stealth, ->,line width = 6, draw = gray, opacity = 1}, 
+%semrect/.style={rectangle, align = center, 
+%draw = gray!50, 
+%fill =gray!50, opacity = 0.7, rounded corners, minimum height = 7.2cm, minimum width = 2.7cm},
+%modarr/.style={>=stealth, ->,line width = 3, draw = gray, opacity = 1}, 
+%node distance = 1.1cm]
+%
+%\node[semrect] at (-11,-8.2) {};
+%\node (1) at (-11,-1.7) {1. Semester };
+%\node [modrect, below of = 1, draw] (M1) {Mathematik 1};
+%\node[modrect, below of = M1, draw]  (TM1) {Technische\\Mechanik 1};
+%%\node[modrect, below of = TM1, draw]  (Ph) {Physik};
+%%\node[modrect, below of = Ph, draw]  (WK) {Werkstoffkunde};
+%%\node[modrect, below of = WK, draw]  (TZ) {CAD/Techn.\\Zeichnen}; 
+%
+%\node[semrect] at (-5.5,-8.2) {};
+%\node (2) at (-5.5,-1.7) {2. Semester };
+%
+%
+%\node[semrect] at (0,-8.2) {};
+%\node (3) at (0,-1.7) {3. Semester };
+%\node [modrect, below of = 2, draw] (M2) {Mathematik 2};
+%\node[modrect, below of = M2, draw]  (TM2) {Daten-\\verarbeitung};
+%\node[modrect, below of = TM2, draw]  (FV) {Technisches\\Englisch};
+%%\node[modrect, below of = FV, draw]  (DV) {Daten-\\verarbeitung};
+%%\node[modrect, below of = DV, draw]  (ET) {Elektrotechnik\\Elektronik};
+%\node [modrect, below of = 3, draw = none, fill = none] (M1) {};
+%\node[modrect, below of = M1, draw = none, fill = none]  (TM1) {};
 %\node[modrect, below of = TM1, draw]  (Ph) {Physik};
 %\node[modrect, below of = Ph, draw]  (WK) {Werkstoffkunde};
 %\node[modrect, below of = WK, draw]  (TZ) {CAD/Techn.\\Zeichnen}; 
-
-\node[semrect] at (-5.5,-8.2) {};
-\node (2) at (-5.5,-1.7) {2. Semester };
-
-
-\node[semrect] at (0,-8.2) {};
-\node (3) at (0,-1.7) {3. Semester };
-\node [modrect, below of = 2, draw] (M2) {Mathematik 2};
-\node[modrect, below of = M2, draw]  (TM2) {Daten-\\verarbeitung};
-\node[modrect, below of = TM2, draw]  (FV) {Technisches\\Englisch};
-%\node[modrect, below of = FV, draw]  (DV) {Daten-\\verarbeitung};
+%
+%\node[semrect] at (5.5,-8.2) {};
+%\node (4) at (5.5,-1.7) {4. Semester};
+%\node [modrect, below of = 4, draw= none, fill = none] (M2) {};
+%\node[modrect, below of = M2, draw= none, fill = none]  (TM2) {};
+%\node[modrect, below of = TM2, draw=none, fill = none]  (FV) {};
+%\node[modrect, below of = FV, draw]  (DV) {Informations-\\technik 1};
 %\node[modrect, below of = DV, draw]  (ET) {Elektrotechnik\\Elektronik};
-\node [modrect, below of = 3, draw = none, fill = none] (M1) {};
-\node[modrect, below of = M1, draw = none, fill = none]  (TM1) {};
-\node[modrect, below of = TM1, draw]  (Ph) {Physik};
-\node[modrect, below of = Ph, draw]  (WK) {Werkstoffkunde};
-\node[modrect, below of = WK, draw]  (TZ) {CAD/Techn.\\Zeichnen}; 
-
-\node[semrect] at (5.5,-8.2) {};
-\node (4) at (5.5,-1.7) {4. Semester};
-\node [modrect, below of = 4, draw= none, fill = none] (M2) {};
-\node[modrect, below of = M2, draw= none, fill = none]  (TM2) {};
-\node[modrect, below of = TM2, draw=none, fill = none]  (FV) {};
-\node[modrect, below of = FV, draw]  (DV) {Informations-\\technik 1};
-\node[modrect, below of = DV, draw]  (ET) {Elektrotechnik\\Elektronik};
-\node[modrect, below of = ET, draw]  (Pro) {Projekt 1};
-
-\node[semrect] at (11,-8.2) {};
-\node (5) at (11,-1.7) {5. Semester};
-\node [modrect, below of = 5, draw] (M3) {Mathematik 3};
-\node[modrect, below of = M3, draw]  (TM3) {Technische \\Mechanik 3};
-\node[modrect, below of = TM3, draw]  (KE) {Konstruktions-\\elemente 1};
-\node[modrect, below of = KE, draw]  (SRT) {Fertigungs-\\verfahren 1};
-\node[modrect, below of = SRT, draw]  (TD) {Thermo-\\dynamik};
-\node[modrect, below of = TD, draw]  (BW) {Allgemeine\\Kompetenzen};
-
-
-\end{tikzpicture}
-%\end{center}
-}
+%\node[modrect, below of = ET, draw]  (Pro) {Projekt 1};
+%
+%\node[semrect] at (11,-8.2) {};
+%\node (5) at (11,-1.7) {5. Semester};
+%\node [modrect, below of = 5, draw] (M3) {Mathematik 3};
+%\node[modrect, below of = M3, draw]  (TM3) {Technische \\Mechanik 3};
+%\node[modrect, below of = TM3, draw]  (KE) {Konstruktions-\\elemente 1};
+%\node[modrect, below of = KE, draw]  (SRT) {Fertigungs-\\verfahren 1};
+%\node[modrect, below of = SRT, draw]  (TD) {Thermo-\\dynamik};
+%\node[modrect, below of = TD, draw]  (BW) {Allgemeine\\Kompetenzen};
+%
+%
+%\end{tikzpicture}
+%%\end{center}
+%}
 
 \frame{\frametitle{Struktur des Studiengangs - Vertiefungsstudium}
 \framesubtitle{}
-\begin{center}
+%\begin{center}
 \tikzset{font=\small}
 \begin{tikzpicture}[
 scale = 0.5,
 modrect/.style={rectangle,align = center, 
 draw = mint!75!black, 
-fill =mint!75!black, opacity = 0.7, minimum width = 3cm, minimum height = .95cm, rounded corners}, 
+fill =mint!75!black, opacity = 0.7, minimum width = 3cm, minimum height = 1cm, rounded corners}, 
 veearr/.style={>=stealth, ->,line width = 6, draw = gray, opacity = 1}, 
 semrect/.style={rectangle, align = center, 
 draw = gray!50, 
 fill =gray!50, opacity = 0.7, rounded corners, minimum height = 7.5cm, minimum width = 3.1cm},
 modarr/.style={>=stealth, ->,line width = 3, draw = gray, opacity = 1}, 
-node distance = 1.05cm]
+node distance = 1.1cm]
 
 
 
 \node[semrect] at (0,1) {};
-\node (6) at (0,7.8) {6. Semester };
+\node (6) at (0,7.8) {4. Semester };
 \node [modrect, below of = 6, draw] (SFT1) {Betriebswirtschaft\\und Technik};
 \node[modrect, below of = SFT1, draw]  (SFA1) {Regelungs-\\technik};
 \node[modrect, below of = SFA1, draw]  (KE2) {Konstruktions-\\elemente 2};
@@ -504,7 +450,7 @@ node distance = 1.05cm]
 \node[modrect, below of = Eng, draw,]  (QSS) {Schienenfahrzeug-\\antriebe 1};
 
 \node[semrect] at (7,1) {};
-\node (7) at (7,7.8) {7. Semester };
+\node (7) at (7,7.8) {5. Semester };
 \node [modrect, below of = 7, draw] (V1) {Herstellung und\\Vermarktung};
 \node[modrect, below of = V1, draw]  (V2) {Qualit\"at und\\Sicherheit};
 \node[modrect, below of = V2, draw]  (V3) {Schienenfahrzeug-\\technik 1};
@@ -512,7 +458,7 @@ node distance = 1.05cm]
 \node[modrect, below of = V4, draw]  (V5) {Allgemeine\\Kompetenzen};
 
 \node[semrect] at (14,1) {};
-\node (8) at (14,7.8) {8. Semester };
+\node (8) at (14,7.8) {6. Semester };
 \node [modrect, below of = 8, draw] (SFT2) {Schienenfahrzeug-\\technik 2};
 \node[modrect, below of = SFT2, draw]  (SFA2) {Schienenfahrzeug-\\antriebe 2};
 \node[modrect, below of = SFA2, draw]  (HuV) {Wahlmodul};
@@ -522,56 +468,56 @@ node distance = 1.05cm]
 
 
 \node[semrect] at (21,1) {};
-\node (9) at (21,7.8) {9. Semester };
+\node (9) at (21,7.8) {7. Semester };
 \node[modrect, below of = 9, draw] (P) {Praxisphase\\ (12 Wochen)};
 \node[modrect, below of = P, draw]  (B) {Bachelorarbeit\\(9 Wochen)};
 \node[modrect, below of = B, draw]  (B) {Kolloquium};
 \end{tikzpicture}
-\end{center}
+%\end{center}
 }
 
-\frame{\frametitle{Vorteile f\"ur Unternehmen und duale Azubis}
-\framesubtitle{}
-\begin{columns}[t] 
-     \begin{column}[T]{7cm} 
-     \textbf{Unternehmen:}
-     	\begin{itemize}
-     		\item Fr\"uhe Rekrutierung
-		\item Hervorragend qualifizierte Bewerber
-		\item Langfristige Bindung
-		\item Fachspezifisches Studium
-		\item Unternehmenserfahrung
-     	\end{itemize}
-     \end{column}
-     	\begin{column}[T]{7cm} 
-	\textbf{Azubis:}
-         	\begin{itemize}
-		\item Studienfinanzierung
-		\item Motivation f\"ur Studium durch T\"atigkeit in der Wirtschaft
-		\item Netzwerkaufbau bereits im Studium
-		\item Praxiserfahrung
-		\end{itemize}
-     \end{column}
- \end{columns}
- \begin{center}
- \href{https://www.youtube.com/watch?v=bTGwHGsTZJU}{\includegraphics[width= 5cm]{DualesStudium.jpg}\source{Klicken f\"ur Image-Video}}
- \end{center}
-}
+%\frame{\frametitle{Vorteile f\"ur Unternehmen und duale Azubis}
+%\framesubtitle{}
+%\begin{columns}[t] 
+%     \begin{column}[T]{7cm} 
+%     \textbf{Unternehmen:}
+%     	\begin{itemize}
+%     		\item Fr\"uhe Rekrutierung
+%		\item Hervorragend qualifizierte Bewerber
+%		\item Langfristige Bindung
+%		\item Fachspezifisches Studium
+%		\item Unternehmenserfahrung
+%     	\end{itemize}
+%     \end{column}
+%     	\begin{column}[T]{7cm} 
+%	\textbf{Azubis:}
+%         	\begin{itemize}
+%		\item Studienfinanzierung
+%		\item Motivation f\"ur Studium durch T\"atigkeit in der Wirtschaft
+%		\item Netzwerkaufbau bereits im Studium
+%		\item Praxiserfahrung
+%		\end{itemize}
+%     \end{column}
+% \end{columns}
+% \begin{center}
+% \href{https://www.youtube.com/watch?v=bTGwHGsTZJU}{\includegraphics[width= 5cm]{DualesStudium.jpg}\source{Klicken f\"ur Image-Video}}
+% \end{center}
+%}
 
-\frame{\frametitle{Bei Interesse: weitere Schritte}
-\framesubtitle{}
-\begin{itemize}
-\item[$\square$] Unterzeichnung Kooperationsvertrag
-\item[$\square$] LoI zur Kapazit\"atsplanung
-\item[$\square$] Abstimmung mit lokaler IHK - begleitet durch FH-Beauftragten A. Beumers
-\item[$\square$] Ggf. Unterst\"utzung bei Marketing und Auswahl
-\end{itemize}
-\vspace{1cm}
-Kontakt:\\
-Prof. Dr. Raphael Pfaff\\
-pfaff@fh-aachen.de\\
-+49-151-70052454
-}
+%\frame{\frametitle{Bei Interesse: weitere Schritte}
+%\framesubtitle{}
+%\begin{itemize}
+%\item[$\square$] Unterzeichnung Kooperationsvertrag
+%\item[$\square$] LoI zur Kapazit\"atsplanung
+%\item[$\square$] Abstimmung mit lokaler IHK - begleitet durch FH-Beauftragten A. Beumers
+%\item[$\square$] Ggf. Unterst\"utzung bei Marketing und Auswahl
+%\end{itemize}
+%\vspace{1cm}
+%Kontakt:\\
+%Prof. Dr. Raphael Pfaff\\
+%pfaff@fh-aachen.de\\
+%+49-151-70052454
+%}
 
 
 %\frame{\frametitle{RVE Basic Modules}
@@ -813,49 +759,62 @@ pfaff@fh-aachen.de\\
 
 
 {
-\usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastle.jpg}}
+\usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastlepale.jpg}}
 
 \section{IMechE Railway Challenge}
-\frame{\vspace{1cm}
 
-\begin{center}
- \color{white} \usebeamerfont{title}{IMechE Railway Challenge}
-\end{center}
-}
-}
+\usebackgroundtemplate{}
 
 
 \frame{\frametitle{Was ist die IMechE Railway Challenge?}
 \framesubtitle{Die IMechE nutzt viele Kan\"ale, um junge Menschen f\"ur die Eisenbahn zu begeistern, die Railway Challenge ist einer davon.}
 \begin{columns}[t] 
      \begin{column}[T]{7cm} 
-     	\begin{itemize}
-     		\item Wettbewerb auf Parkbahnanlage:
+     		\only<1>{
 		\begin{itemize}
 		\item Relevante Disziplinen, z.B. 
 		\begin{itemize}
+		\item ATO-Zielbremsung
+		\item Zuverl\"assigkeit
 		\item L\"armreduzierung
 		\item Energier\"uckgewinnung
-		\item Innovation
+		\item Fahrkomfort
+		\item Innovation Paper
 		\item Business Case
 		\end{itemize}
-		\end{itemize}
-		\item Raum f\"ur Innovation:
+		\end{itemize}}
+		\only<2->{
 		\begin{itemize}
-		\item Batteriefahrzeug
-		\item IoT-Connection
-		\item Autonomes Fahren
+		\item Raum f\"ur Innovation, z.B.:
+		\begin{itemize}
+		\item Batteriefahrzeug:
+		\begin{itemize}
+		\item LTO-Hochleistungsbatterie
+		\item LiFePo-Batterie hoher Kapazit\"at
 		\end{itemize}
-		\item FH Aachen ist erster ``Overseas Entry''
-     	\end{itemize}
-     \end{column}
+		\item IoT-Connection
+		\item Robot Operating System
+		\item Autonomes Fahren
+		\begin{itemize}
+		\item Lidar
+		\item Stereokamera
+		\item RTK-Lokalisierung
+		\end{itemize}
+		\end{itemize}
+		\end{itemize}}
+     	     \end{column}
      	\begin{column}[T]{7cm} 
          	\begin{center}
-	\vspace{-1cm}
-            		\includegraphics[width=0.7\textwidth]{EmmaSeite}
+	%\vspace{-1cm}
+            		\includegraphics[width=\textwidth]{EmmaDriver}
         		\end{center}
      \end{column}
  \end{columns}
+ \vspace{.5cm}
+\only<3>{ \begin{itemize}
+	\item Kompletter Projektzyklus in 10 Monaten abgebildet - vom Lastenheft bis zur Abnahme
+	\item Durch Skalierung (etwa 1:5) kosteng\"unstig und handhabbar
+\end{itemize}}
 }
 
 \frame{\frametitle{Welchen Vorteil haben die Studierenden?}
@@ -877,48 +836,21 @@ pfaff@fh-aachen.de\\
      	\begin{column}[T]{7cm} 
          	\begin{center}
 		\vspace{-.5cm}
-            		\href{https://www.youtube.com/watch?v=_z9fII6lbig}{\includegraphics[width=0.9\textwidth]{Winners2018}} \source{Klicken f\"ur Video}\\
+            		\href{https://www.youtube.com/watch?v=_z9fII6lbig}{\includegraphics[width=0.9\textwidth]{Winners2019}} \source{Klicken f\"ur Video}\\
 			Emma $\heartsuit$ J.I.M. \\
-			IMechE Railway Challenge 2018\\ \vspace{.3cm}
-			4. Platz von 12 Teilnehmern
+			IMechE Railway Challenge 2019\\ \vspace{.3cm}
+			Grand Champion
         		\end{center}
      \end{column}
  \end{columns}
 }
 
-\frame{\frametitle{Sponsoring f\"ur Emma und das Team?}
+\frame{\frametitle{Sponsoring f\"ur Emma und das Team}
 \framesubtitle{}
-\begin{columns}[t] 
-     \begin{column}[T]{8cm} 
-     	\begin{itemize}
-     		\item Nationale und internationale Sichtbarkeit (Youtube, Facebook, Innotrans, ...)
-%		\begin{itemize}
-%		\item Marke
-%		\item Technologie
-%		\end{itemize}
-		\item Engagement im Bereich Nachwuchsgewinnung
-		\item Direkten Kontakt zu Studierenden
-		\item Studierende in Ber\"uhrung mit eigenen Technologien bringen
-		\item Sponsoring Pakete:
-		\begin{itemize}
-		\item Namenssponsor (5000 \euro) (verkauft)
-		\item Logo auf Lok (500/1000 \euro)
-		\item Warnwesten-Sponsor (2000 \euro) (verkauft)
-		\item Dinner-Sponsor (800 \euro) (verkauft)
-		\end{itemize}
-		\item F\"ur alle Pakete: Sponsoren-Event mit Studierenden
-     	\end{itemize}
-     \end{column}
-     	\begin{column}[T]{6cm} 
          	\begin{center}
-            		\includegraphics[width=0.95\textwidth]{Team2019.jpg}\source{}
-		Team Emma {\Large \color{mint!90!black}$\varheartsuit$} J.I.M. \\
-		IMechE Railway Challenge 2019\\ \vspace{.5cm}
-		www.emmalovesjim.com
+            		\includegraphics[width=\textwidth]{Sponsoren2019}\source{}
         		\end{center}
-     \end{column}
- \end{columns}
-}
+  }
 
 %\frame{\frametitle{Was Emma braucht, um erfolgreich zu sein...}
 %\framesubtitle{}
@@ -955,11 +887,11 @@ pfaff@fh-aachen.de\\
 %}
 
 {
-\usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastle.jpg}}
+\usebackgroundtemplate{\includegraphics[width= \paperwidth]{EmmaCastlepale.jpg}}
 
-\frame{\frametitle{\color{white}Was k\"onnen Emma und das Team der Bahnindustrie geben?}
+\frame{\frametitle{\color{white}Was kann die Railway Challenge der Bahnindustrie geben?}
 \framesubtitle{}
-\begin{itemize} \color{white}
+\begin{itemize} %\color{white}
 \item Neues Bild von Studium und Beruf im Bereich Bahn
 \item Jugendliche Darstellung
 \item ``Du bist hier willkommen!''
@@ -974,15 +906,82 @@ pfaff@fh-aachen.de\\
 }
 }
 
+\usebackgroundtemplate{}
+
+\section{Railway Challenge Continental Edition}
+
+\frame{\frametitle{Warum eine ``eigene'' Railway Challenge?}
+\framesubtitle{}
+\begin{columns}[t] 
+     \begin{column}[T]{6cm} 
+     	\begin{itemize}
+     		\item Vorbild Formula Student
+		\begin{itemize}
+			\item Gegr\"undet 1981 durch SAE
+			\item Heute \"uber 500 Teams
+			\item Erweiterung auf andere L\"ander seitens IMechE erw\"unscht
+		\end{itemize}
+		\item K\"onnen wir diese Erfolgsgeschichte wiederholen?
+		\item Nicht nur in UK ist Eisenbahn attraktiv!
+		\item Europ\"aische Pr\"agung durch Sponsoren etc.
+		\item Strahlwirkung auf Jugendliche
+     	\end{itemize}
+     \end{column}
+     	\begin{column}[T]{8cm} 
+         	\begin{center}
+            		\only<1>{\includegraphics[width=0.9\textwidth]{lageplan}}
+			\only<2>{\includegraphics[width=0.9\textwidth]{luftbild}}
+        		\end{center}
+     \end{column}
+ \end{columns}
+}
+
+\begin{frame}[allowframebreaks]
+\frametitle{Punkte zur Organisation}
+\framesubtitle{}
+\begin{itemize}
+\item Strecke in Bad Schussenried (BW, nahe Bodensee): lokaler Verein hat sich bereit erklärt, uns zu beherbergen
+\item Teams aus Europa
+\item Termin des Events: Mitte Juni 2021, danach jährlich
+\begin{itemize}
+		\item Interessensbekundung der Teams Frühjahr 2020
+		\item Registrierung August/September 2020
+		\end{itemize} 
+\item Finanzbedarf: Schätzung ca. 15.000 EUR (ohne optionale Punkte):
+\begin{itemize}
+		\item Infrastruktur Wettkampfgelände (Zelt, Duschen, WC, Strom, ...) 10.000 EUR
+    		\item Aufwandsentschädigung Parkbahn ~3.000 EUR
+   		\item  Reisekosten Jury ~2.000 EUR
+    		\item Toll wäre: Siegprämien (1-2 Teams nach England?) 10.000 EUR
+    		\item Optimal: Anschubfinanzierung für Erstteilnehmer aus Not-for-Profit-Organisationen		
+		\end{itemize}\framebreak
+\item Personalbedarf:
+	\begin{itemize}
+		\item Eventmanagement, Registrierung, Weiterleiten der Dokumente, Koordination Helfer... ca. 6 Personenmonate (UK benötigt 12!)
+    		\item Jury: 6 Mitglieder (EBA, NoBo, ...) - Anwesenheit über das Wochenende (Fr-So) + Prüfen und Bewerten der Dokumente vorab. 	
+		\item Prominenter Head Judge
+    		\item Freiwillige der Parkbahn (z.B. im Bremswagen, Catering und so weiter)
+		\end{itemize}
+\item Interesse an Unterst\"utzung derzeit:
+\begin{itemize}
+		\item Verband der Bahnindustrie in Deutschland
+		\item Deutsche Maschinentechnische Gesellschaft
+		\item Verband Deutscher Ingenieure
+		\item Westf\"alische Lokomotivfabrik Reuschling 
+		\end{itemize}
+		\end{itemize}
+\end{frame}
+
+
 {
-\usebackgroundtemplate{\transparent{0.4}\includegraphics[width= 1.45\paperwidth]{Lecker}}
+\usebackgroundtemplate{\includegraphics[width= 1\paperwidth]{Winners2019}}
 \centering
 \frame{\frametitle{Let's put awesome back into railways!}
 \begin{tikzpicture}
- \path (0,0) -- (0cm,-7.5cm) node[rectangle, fill = white, opacity = 0.5, text opacity = 1] {Prof. Dr. Raphael Pfaff $\cdot$
+ \path (0,0) -- (0cm,-7.3cm) node[rectangle, fill = white, opacity = 0.5, text opacity = 1] {Prof. Dr. Raphael Pfaff $\cdot$
 			pfaff@fh-aachen.de $\cdot$
-	+49-151-70052454 $\cdot$
-		www.r10f.com};
+	%+49-151-70052454 $\cdot$
+		www.emmalovesjim.com};
 \end{tikzpicture}
 
 }
